@@ -5,6 +5,8 @@ import os
 def video_to_photo(video_path):
     # Videoyu aç
     cap = cv2.VideoCapture(video_path)
+    
+    frames = []
 
     # Videonun süresini al
     frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -15,10 +17,10 @@ def video_to_photo(video_path):
         ret, frame = cap.read()
         if ret == False:
             break
-
-
-        # Resmi kaydet
-        cv2.imwrite(f"image{i}_.jpg", frame)
+        
+        frames.append(frame)
 
     # Videoyu kapat
     cap.release()
+
+    return frames

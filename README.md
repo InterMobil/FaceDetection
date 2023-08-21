@@ -1,7 +1,9 @@
 
 # Face Detection
 
- - FaceDetection_git.py : Öncelikle videodan yaklaşık olarak 0.5 saniyede anlık fotoğraf alınır. Sonra bu fotoğraflarda alt ve üst dudak arasındaki mesafe incelenerek müşterinin konuşup konuşmadığı tespit edilir. Eğer konuşma tespit edilirse fotoğraflar içindeki yüzler Face_Extraction ile çıkarılır ve kimlik üzerinden alınan resim ile karşılaştırılır.
+- main.py : Fonksiyonların çalıştığı dosya.
+
+ - FaceDetection_git.py : Videodan alınan resimlerde dudak hareketi olup olmadığı tespit edilir.
 
  - FaceExtraction_git.py : Fotoğraf üzerindeki yüzlerin tespit edilip resim olarak bastırılması.
 
