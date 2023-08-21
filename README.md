@@ -13,4 +13,3 @@
 
  - shape_predictor_68_face_landmarks.dat : Ağız hareketlerinin tespiti için kullanılan model dosyasıdır.
 
-
