@@ -37,9 +37,11 @@ def Face_Extraction(image, file_name):
 
         face = image[y:y+h, x:x+w]  # Crop the face region
         logger.info("Resim croplandı.")
+
         output_path = str(file_name) + ".jpg" # Construct the output path for each face
         cv2.imwrite(output_path, face)  # Save the cropped face as a separate image
         logger.info("Resim kaydedildi.")
+        
     except Exception as e:
         logger.error("Hata: fonksiyon beklenen şekilde çalışmadı. Exception :{}".format(e))
         raise e
